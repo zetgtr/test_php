@@ -1,0 +1,21 @@
+.header {
+  background-color: rgb(121, 24, 24);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+.header p {
+  margin: 0;
+  color: #ffffff;
+}
+.header svg {
+  filter: invert(1);
+}
+.header_user {
+  display: flex;
+}
+.header_user p {
+  margin-right: 5px;
+}/*# sourceMappingURL=header.css.map */

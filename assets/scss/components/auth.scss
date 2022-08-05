@@ -1,0 +1,21 @@
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h5{
+            margin: 5px;
+        }
+    }
+    &_submit{
+        display: flex;
+    }
+    &_save{
+        margin: 5px;
+        width: 100%;
+    }
+}

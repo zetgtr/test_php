@@ -1,0 +1,63 @@
+.comment_box_new {
+  background-color: #FFFFFF;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+@-webkit-keyframes example {
+  from {
+    background-color: #c7f3e6;
+  }
+  to {
+    background-color: #FFFFFF;
+  }
+}
+@keyframes example {
+  from {
+    background-color: #c7f3e6;
+  }
+  to {
+    background-color: #FFFFFF;
+  }
+}
+.comment_title {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #7A7A7A;
+  text-transform: uppercase;
+}
+.comment_title_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comment_title_box a {
+  text-decoration: none;
+  color: black;
+}
+.comment_flex {
+  display: flex;
+}
+.comment_name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-button p {
+  margin: 0px;
+}
+
+.accordion-button::after {
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .comment_count_text {
+    display: none;
+  }
+}/*# sourceMappingURL=comment.css.map */

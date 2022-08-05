@@ -1,0 +1,95 @@
+.reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reg_form {
+  width: 370px;
+  padding: 30px 0;
+  border-bottom: 1px solid #c0c0c0;
+}
+.reg_form_title {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #231815;
+  margin-bottom: 12px;
+}
+.reg_form_text {
+  color: #231815;
+  opacity: 0.5;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.reg_form_error {
+  height: 15px;
+}
+.reg_form_error_message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+.reg_form_error_message a:hover {
+  text-decoration: underline;
+}
+.reg_form form {
+  display: flex;
+  flex-direction: column;
+}
+.reg_form form label {
+  color: #7a7a7a;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.reg_form form input {
+  color: #231815;
+  border: 1px solid #c0c0c0;
+  outline: none;
+  width: 100%;
+  padding: 10px 15px;
+}
+.reg_form form input[type=submit] {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 19px 15px;
+  background-color: #E31E24;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.reg_form form input[type=submit]:hover {
+  background-color: #43d651;
+  transition: all 0.3s;
+}
+.reg_login {
+  width: 370px;
+  padding: 30px 0;
+}
+.reg_login p {
+  color: #231815;
+  opacity: 0.5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.reg_login_link {
+  display: block;
+  padding: 19px 15px;
+  color: #7A7A7A;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #7A7A7A;
+  outline: none;
+  cursor: pointer;
+}
+.reg_login_link:hover {
+  background-color: #43d651;
+  border: 1px solid #43d651;
+  color: #fff;
+  transition: all 0.3s;
+}/*# sourceMappingURL=userReg.css.map */

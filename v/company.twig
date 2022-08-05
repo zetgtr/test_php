@@ -1,0 +1,21 @@
+{% include "slaider.twig" %}
+
+
+<a class="btn btn-primary company_button" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Добавить компанию</a>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+       <form method="post">
+        <input class="form-control" name="name" type="text" placeholder="Название" aria-label="default input example" required>
+        <input class="form-control" name="inn" type="text" placeholder="Инн" aria-label="default input example" required>
+        <input class="form-control" name="director" type="text" placeholder="Генеральный директор" aria-label="default input example" required>
+        <input class="form-control" name="address" type="text" placeholder="Адрес" aria-label="default input example" required>
+        <input class="form-control" name="phone" type="text" placeholder="Телефон" aria-label="default input example" required>
+        <textarea class="form-control" name="info" placeholder="Общая информация" id="exampleFormControlTextarea1" rows="3" required></textarea>
+        <button type="submit" class="btn btn-success">Добавить</button>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<h5> Коментарии </h5>
+<hr>
+{% for comment in comments %}
+<div class="comment_box">
+    <div class="comment_name">
+        <p>Пользователь: {{comment.userName}}</p>
+        <p>{{comment.date}}</p>
+    </div>
+    <p>{{comment.comment}}</p>
+<div>
+<hr>
+{% endfor %}

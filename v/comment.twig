@@ -1,0 +1,29 @@
+<div class="comment_title_box">
+  <h1 class="comment_title">{{companyName}}</h1>
+  <a href="index.php">Назад</a>
+</div>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <p>Добавить коментарий</p>
+        <div class="comment_flex">
+          <p class="comment_count_text">Количество коментариев:</p>
+          <p class="comment_count">{{count}}</p>
+        <div>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <p>Коментарий</p>
+         <textarea class="form-control" name="comment" placeholder="Введите коментарий" id="exampleFormControlTextarea1" rows="3" required></textarea>
+         <button onClick="addComment(companyId={{company}},userId={{user}})" type="submit" class="btn btn-success">Добавить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="comment_list">
+  {% include "commentList.twig" %}
+</div>
+<script src="assets/js/comment.js"></script>

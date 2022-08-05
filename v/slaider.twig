@@ -1,0 +1,45 @@
+<div class="company">
+    <div class="slider_container">
+
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+
+        <div class="slider">
+            <div class="slider__wrapper">
+
+                {% if companys %}
+                    {% for company in companys %}
+
+                        <div class="slider__item">
+                            <div class="company_item_wrp" id="id_{{ company.id }}">
+                                <a class="company_item_link" href="index.php?act=comment&c=page&id={{ company.id }}">
+                                    <div class="company_title">{{ company.name }}</div>
+                                    <div class="company_director">{{ company.director }}</div>
+                                    <div>{{ company.address }}</div>
+                                </a>
+                            </div> 
+                        </div>
+                        
+                    {% endfor %}
+                {% endif %} 
+
+            </div>  
+        </div>
+                    
+        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+
+    </div>
+
+    {% if companys %}
+        <div class="company_mobile">
+            {% for company in companys %}
+                <div class="company_item_wrp" id="id_{{ company.id }}">
+                    <a class="company_item_link" href="index.php?act=comment&c=page&id={{ company.id }}">
+                        <div class="company_title">{{ company.name }}</div>
+                        <div class="company_director">{{ company.director }}</div>
+                        <div>{{ company.address }}</div>
+                    </a>
+                </div> 
+            {% endfor %}
+    {% endif %} 
+</div>
+<script src="assets/js/slider.js"></script>

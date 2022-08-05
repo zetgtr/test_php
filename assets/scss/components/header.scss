@@ -1,0 +1,21 @@
+.header{
+    background-color: rgb(121, 24, 24);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    p{
+        margin: 0;
+        color: #ffffff;
+    }
+    svg{
+        filter: invert(1);
+    }
+    &_user{
+        display: flex;
+        p{
+            margin-right: 5px;
+        }
+    }
+}

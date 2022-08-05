@@ -1,0 +1,13 @@
+.content{
+    max-width: 1170px;
+    margin: auto;
+    padding: 10px;
+}
+
+@import "./components/header.scss";
+@import "./components/auth.scss";
+@import "./components/slaider.scss";
+@import "./components/comment.scss";
+@import "./components/company.scss";
+@import "./components/userLogin.scss";
+@import "./components/userReg.scss";

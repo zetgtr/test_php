@@ -1,0 +1,52 @@
+.comment{
+  &_box_new {
+    background-color: #FFFFFF;
+    animation-name: example;
+    animation-duration: 15s;
+  }
+  
+  @keyframes example {
+    from {background-color: #c7f3e6;}
+    to {background-color: #FFFFFF;}
+  }
+  &_title{
+      padding: 0 10px;
+      font-weight: bold;
+      color: #7A7A7A;
+      text-transform: uppercase;
+      &_box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+  }
+  &_flex{
+    display: flex;
+  }
+  &_name{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.accordion-button{
+  display: flex;
+  justify-content: space-between;
+  p{
+    margin: 0px;
+  }
+}
+
+.accordion-button::after{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .comment_count_text{
+    display: none;
+  }
+}

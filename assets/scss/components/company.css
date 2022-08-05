@@ -1,0 +1,17 @@
+.company_button {
+  margin: 30px 0px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.row {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .company_button {
+    margin: 30px 0px;
+  }
+}/*# sourceMappingURL=company.css.map */
